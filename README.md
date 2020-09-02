@@ -4,7 +4,7 @@ Project #1 for CPSC 335 Algorithm Engineering with Professor Charles Siska at CS
 Our team name is: AntGvng
 
 Team members are:
-    Tiffany Hernaez
-    Kevin Nguyen 
-    Trong Pham
+    Tiffany Hernaez,
+    Kevin Nguyen, 
+    Trong Pham.
     
