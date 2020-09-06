@@ -5,6 +5,7 @@ Our team name is: AntGvng
 
 Team members are:
     Tiffany Hernaez,
-    Kevin Nguyen, 
+    Kevin Nguyen,
+    Robert Kenny,
     Trong Pham.
     
