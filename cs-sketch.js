@@ -23,11 +23,11 @@ function set_new_color()
 {
     switch (g_bot.color)
     { //0->1->2->3->4->0
-	case 0: fill(color('red')); break;
-	case 1: fill(color('yellow')); break;
-	case 2: fill(color('blue')); break;
-	case 3: fill(color('green')); break;
-	case 4: fill(color('black')); break;
+	case 0: fill(255,0,0); break;
+	case 1: fill(255,255,0); break;
+	case 2: fill(0,0,255); break;
+	case 3: fill(0,255,0); break;
+	case 4: fill(0,0,0); break;
     }   
 }
 
@@ -178,5 +178,5 @@ function mousePressed( )
     g_bot.y %= g_box.hgt;
     //console.log( "bot x,y = " + g_bot.x + "," + g_bot.y );
     
-    //draw_bot( );
+    draw_bot( );
 }
