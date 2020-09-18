@@ -27,7 +27,7 @@ Specific coloring codes;  (+1)(%5)
 // Make global g_canvas JS 'object': a key-value 'dictionary'.
 var g_canvas = { cell_size:10, wid:41, hgt:41 }; // JS Global var, w canvas size info.
 var g_frame_cnt = 0; // Setup a P5 display-frame counter, to do anim
-var g_frame_mod = 1; // Update every 'mod' frames.
+var g_frame_mod = 25; // Update every 'mod' frames.
 var g_stop = 0; // Go by default.
 
 
