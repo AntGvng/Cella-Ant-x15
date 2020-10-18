@@ -1,0 +1,51 @@
+<!doctype html> <html> 
+<head>
+	<meta charset="utf-8" />
+	<title>CPSC 351 - Fall 2020 - Sorting Race</title>
+	<link rel="stylesheet" href="assets/style.css"/>
+</head>
+
+<body>
+	<h1>================SORTING RACE================</h1>
+	<canvas id="grid" width="1500" height="1500"></canvas>
+
+</body>
+
+<script src="assets/js_function.js"></script>
+
+<script>
+	var canvas = document.getElementById( "grid" );
+	var context = canvas.getContext( "2d" );
+
+	// Defining our lists:
+	arrayList = [
+	[0, 11, 10, 3, 2, 8, 4, 7, 6, 5, 1, 9],
+	[0, 10, 9, 8, 1, 10, 3, 9, 2, 0, 1, 1],
+	[1, 6, 3, 8, 9, 4, 0, 10, 5, 2, 11, 7],
+	[1, 9, 8, 4, 1, 11, 3, 8, 2, 6, 2, 5],
+	[2, 9, 7, 11, 4, 0, 1, 6, 3, 8, 10, 5],
+	[2, 6, 1, 0, 9, 4, 8, 7, 8, 6, 2, 6],
+	[3, 4, 5, 7, 1, 9, 2, 0, 6, 8, 11, 10],
+	[3, 5, 6, 10, 10, 0, 2, 3, 11, 7, 2, 4],
+	[4, 11, 6, 0, 7, 9, 10, 2, 1, 8, 3, 5],
+	[4, 0, 11, 0, 6, 5, 6, 6, 7, 1, 0, 10],
+	[5, 2, 8, 1, 10, 11, 3, 4, 7, 9, 0, 6]];
+
+	randomListPosition = Math.floor(Math.random() * 12);
+
+	writeALetter(context, "INSERTION SORT", 60, 30, "#009de6");
+	writeALetter(context, "GOLD'S PORESORT", 375, 30, "#009de6");
+	writeALetter(context, "MERGE SORT", 700, 30, "#009de6");
+	writeALetter(context, "QUICK SORT", 1050, 30, "#009de6");
+
+	writeHexaNumbers(context, arrayList[randomListPosition], 10, 75, "#009de6");
+	writeHexaNumbers(context, arrayList[randomListPosition], 320, 75, "#009de6");
+	writeHexaNumbers(context, arrayList[randomListPosition], 650, 75, "#009de6");
+	writeHexaNumbers(context, arrayList[randomListPosition], 1000, 75, "#009de6");
+	
+	
+	mergesort(arrayList[randomListPosition], context, 95, arrayList[randomListPosition]);
+	quicksort(arrayList[randomListPosition], 0, 11, context, 95);
+	InsertSort(arrayList[randomListPosition], 0, 14, context, 95)
+
+	</script>
