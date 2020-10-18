@@ -172,23 +172,22 @@ async function quicksort(array, start, end, context, posy){
 var ypos = 75;
 
 function insert(array, start, end, value){
-		var tempArray = new Array(11);
+		var tempArray = new Array(15);
 		tempArray[0] = value;
-		for(var j = start +1; j<end; j++){
+		for(var j = start; j<=end; j++){
 			tempArray[j] = array[j-1];
 		}
-		array = tempArray;
-		return array;
+		return tempArray;
 }
 
 async function InsertSort(array, start, end, context, posy){
-	 for(var i = end; i>=start; i--){
+	 for(var i = end; i!=start; i--){
 		
 		writeHexaNumbers(context, array, 10, posy);
 		await pause(3);
 		
 		erase(context, 10, posy, array.length);
-		var insertArray = insert(array,  start,  end, array[i])
+		var iarray = insert(array,  start+1,  end, array[i])
 		writeHexaNumbers(context, array, 10, posy, "#009de6");
 		posy += 20;
 	 }
