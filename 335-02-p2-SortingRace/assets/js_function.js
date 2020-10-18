@@ -178,7 +178,7 @@ function insert(array, start, end, value){
 			tempArray[j] = array[j-1];
 		}
 		array = tempArray;
-		return;
+		return array;
 }
 
 async function InsertSort(array, start, end, context, posy){
