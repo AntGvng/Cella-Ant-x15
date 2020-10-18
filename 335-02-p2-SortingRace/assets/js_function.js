@@ -172,7 +172,7 @@ async function quicksort(array, start, end, context, posy){
 var ypos = 75;
 
 function insert(array, start, end, value){
-		var tempArray = new Array(15);
+		var tempArray = new Array(11);
 		tempArray[0] = value;
 		for(var j = start; j<=end; j++){
 			tempArray[j] = array[j-1];
