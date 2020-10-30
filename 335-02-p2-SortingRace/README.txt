@@ -7,7 +7,7 @@ Robert Kenny 890096985 - rlkenny@csu.fullerton.edu
 ------------------------------------------------------------
 Intro
 
-  <Description of the project>
+  This application will display sorting and have them race to see which algorithm sorts faster. We are displaying the following algorithms: Merge Sort, Gold’s Poresort, Quick Sort, and Insert Sort. Every couple of seconds the race will start over once again with a new array to sort.
 
 Zip Contents
 *   File readme.txt:  This file.
